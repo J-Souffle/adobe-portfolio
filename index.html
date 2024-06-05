@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script src="/jquery.min.js"></script>
+<title>Index</title>
+<style>
+	.columnsDesktop {
+		display: grid;
+		grid-gap: 3vh;
+		grid-template-columns: 0% 33% 0%;
+		width: 150vh;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: 3vh;
+	}
+	
+	.socialsGrid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr); /* Creates 6 columns */
+		grid-column-gap: 15px; /* Space between grid items */
+		grid-row-gap: 0px;
+	}
+	
+	.grid-item {
+		width: 100%; /* Makes image fill the container */
+    	height: auto; /* Maintains aspect ratio */
+	}
+	
+</style>
+</head>
+
+<link rel="shortcut icon" href="images/profile-min.ico"/>
+
+<body id="body">
+    
+<script>
+    $(document).ready(function(){ $("#headerTop").load("header.html"); })     
+</script>
+<div id="headerTop" class="header"></div>
+    
+<div id="columns" class="columnsDesktop" style="margin-bottom: 3vh;"> 
+    <script>
+        if(innerWidth < innerHeight) {
+            document.getElementById("columns").className = "columnsMobile";
+        }
+        else {
+            document.getElementById("columns").className = "columnsDesktop";
+        }
+    </script> 
+	
+	
+	<div class="box" style="justify-content: center; align-items: center; text-align: center" id="products">
+		<table style="text-align: center; width: 100%;">
+            <tr style="text-align: center;">                
+				<a href = "https://jaden-williams-merch.creator-spring.com" target="_blank" rel="noopener noreferrer"><img src="images/WebsiteBanner-min.webp" width="100%"></a>
+			</tr>
+			<tr style="text-align: center;">  
+				<div style="border-radius:24px; overflow: hidden; center; align-items: center; text-align: center; border-radius:24px; display: flex; justify-content: center; align-items: center; /* Centers vertically */">
+				<iframe id="productFrame" style="border-radius:24px; text-align: center; min-height: 400px; transform: scale(1.1) translateX(1.8%); margin-bottom: 3em" 
+						src="https://embed.creator-spring.com/widget?slug=jaden-williams-merch&per=999&bg=F6F6F8&txtcolor=000000&currency=&page=" 
+						title="Merch Store" width="100%"  data-reactroot=""></iframe>
+					</div>
+			</tr>
+        </table>
+	</div>
+	
+    
+    <div class="box" style="text-align: center;" id="boxEmojis">
+		<div class="socialsGrid">			
+			<div class="grid-item"><a href = "https://www.paypal.com/paypalme/blueeyesjt1" target="_blank" rel="noopener noreferrer"><img alt = "Paypal"  src="images/icons/pp-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.patreon.com/user?u=42033840" target="_blank" rel="noopener noreferrer"><img alt = "Patreon"  src="images/icons/Patreon.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.youtube.com/channel/UC78mJyZPMa_OG08KLHjhODw/join" target="_blank" rel="noopener noreferrer"> <img src="images/icons/yt-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.tiktok.com/@officialjadenwilliams/?" target="_blank" rel="noopener noreferrer"><img alt = "Tiktok"  src="images/icons/tt-min_1.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.instagram.com/officialjadenwilliams/" target="_blank" rel="noopener noreferrer"> <img src="images/icons/insta-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://discord.gg/qnZbzvm4hc" target="_blank" rel="noopener noreferrer"> <img src="images/icons/discord-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://twitter.com/JadenJTW" target="_blank" rel="noopener noreferrer"> <img src="images/icons/tw-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.snapchat.com/add/officialjadenw" target="_blank" rel="noopener noreferrer"> <img src="images/icons/snapchat-min.webp" width="100%" > </a></div>
+			<div class="grid-item"><a href = "https://twitch.tv/officialjadenwilliams" target="_blank" rel="noopener noreferrer"> <img src="images/icons/twtc-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://kick.com/jadenwilliams" target="_blank" rel="noopener noreferrer"> <img src="images/icons/kick.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.reddit.com/r/JadenWilliams" target="_blank" rel="noopener noreferrer"> <img src="images/icons/red.webp" width="100%" > </a></div>
+			<div class="grid-item"><a href = "https://www.facebook.com/profile.php?id=100088377916985" target="_blank" rel="noopener noreferrer"> <img src="images/icons/fb-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.linkedin.com/in/jaden-williams/" target="_blank" rel="noopener noreferrer"> <img src="images/icons/ln-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://github.com/Blueeyesjt1" target="_blank" rel="noopener noreferrer"> <img src="images/icons/gh-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.amazon.com/gp/registry/wishlist/34J3E7JKVA200" target="_blank" rel="noopener noreferrer"> <img src="images/icons/amz-min.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://rumble.com/c/c-2875526" target="_blank" rel="noopener noreferrer"> <img src="images/icons/rumble-icon-min.webp" width="100%" style="filter: contrast(1.5)"> </a></div>
+			<div class="grid-item"><a href = "https://calendly.com/jadenjtw" target="_blank" rel="noopener noreferrer"> <img src="images/icons/schedule.webp" width="100%"> </a></div>
+			<div class="grid-item"><a href = "https://www.youtube.com/watch?v=pROjzb-ZoCA" target="_blank" rel="noopener noreferrer"> <img src="images/icons/of-min.webp" width="100%" > </a></div>
+			
+			<!--<div class="grid-item"><a href = "https://www.famousbirthdays.com/people/jaden-williams.html" target="_blank" rel="noopener noreferrer"> <img src="https://play-	lh.googleusercontent.com/UxtovNChkEqt33w3nnOKaFuCG1XlOEufzrzNhYnxx0ONZcIVm1TLZ3-ScIOtvGrHxA" width="100%"> </a></div>-->
+		
+			<!--<div class="grid-item"><a href="TwoCents.html" target="_blank" rel="noopener noreferrer">
+				<div style="background-image: url(images/icons/2cents.webp); background-repeat: no-repeat; background-position: center; background-size: contain; border-radius: 25px; height: 100%; display: flex; justify-content: center; align-items: center; position: relative;"><p style="margin: 0; color: white; text-align: center; filter: drop-shadow(2px 2px 2px black);"><b>2 Cents Blog</b></p></div></a>
+			</div>-->
+		</div>
+	</div>
+		
+    <div class="box" id="boxBio" style=" ">
+        <table>
+            <tr style="vertical-align: top;">
+                <th style="width:60%;"> <p style="text-align: left; margin-right: 1em;" id="bioParagraph">Jaden Williams is a 23 year old filmmaker and software engineer who has gained a following on social media, with over 5 million followers across all platforms. In addition to his impressive social media presence, Jaden is also proficient in a number of software programs and possesses a professional-level of knowledge in many more. With a lifelong passion for the tech and entertainment industry, Jaden aspires to make a lasting impact on the world through his work and creations.</p>
+                </th>
+                <th> <img src="images/profile-min.webp" width="100%" style="margin-top: 1em;"> </th>
+            </tr>
+        </table>
+        <p>Certified Softwares:</p>
+        <p style="margin-left: 20px; margin-top: -10px;">Adobe Premire Pro, Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver, Adobe InDesign.</p>
+        <p>Software Proficiency:</p>
+        <p style="margin-left: 20px; margin-top: -10px;">Adobe After Effects, Adobe Media Encoder, Audacity, Blender, Boujou, Confluence, Dropbox, EmberGen, Git, Github, Github Desktop, Google Suite, IntelliJ, Jira, Microsoft Office Suite, Notepad++, PyCharm, Rider, Sublime, Trello, Unity, Visual Studio, VS Code, WorkDay.</p>
+        <p>Language Proficiency:</p>
+        <p style="margin-left: 20px; margin-top: -10px;">C#, Java, Python, LUA, SQL, HTML/CSS, Javascript, C++, Assembly.</p>
+    </div>
+ 
+    <script>
+        if(innerWidth < innerHeight) {
+            document.getElementById("bioParagraph").innerHTML = "Jaden Williams is a 23 year old filmmaker and software engineer who has gained a following on social media, with over 5 million followers across all platforms. In addition to his social media presence, Jaden is also proficient in a number of software programs and possesses a professional-level of knowledge in many more. With a lifelong passion for the tech and entertainment industry, Jaden aspires to make a lasting impact on the world through his work and creations.";
+            
+            document.getElementById("iconBoost").style = "background-image: url(https://play-lh.googleusercontent.com/UxtovNChkEqt33w3nnOKaFuCG1XlOEufzrzNhYnxx0ONZcIVm1TLZ3-ScIOtvGrHxA); background-repeat:no-repeat; background-position: center; background-size: cover; border-radius: 25px; position: inherit; padding: .3em; padding-top: .25em; padding-bottom: .25em;"
+            
+            document.getElementById("iconCents").style = "background-image: url(images/2cents.png); background-repeat:no-repeat; background-position: center; background-size: contain; border-radius: 25px; position: inherit; padding: .3em; padding-top: .25em; padding-bottom: .25em;"
+			
+			document.getElementById("productFrame").style = "border-radius:24px; text-align: center; height: 800px; transform: scale(1.3) translateX(.75%);"
+        }
+        else {
+            document.getElementById("products").style = "grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid grid-row-end: 1; height: inherit; padding-bottom: 0em;";
+            document.getElementById("boxEmojis").style = "grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid grid-row-end: 2;";
+            document.getElementById("boxBio").style = "grid-column-start: 2; grid-column-end: 3; grid-row-start: 3; grid grid-row-end: 3; margin-bottom: 5vh;";
+        }
+    </script> 
+</div>
+    
+<script>
+    $(document).ready(function(){ $("footer").load("footer.html"); })     
+</script>
+<footer class="footer" id="footer" style=""></footer>
+    
+</body>
+</html>
