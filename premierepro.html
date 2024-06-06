@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles/premierepro.css">
+        <link rel="stylesheet" href="styles/photoshop.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <title>Filmmaking</title>
         <style>
@@ -18,12 +18,22 @@
         </style>
     </head>
     <body id="body">
+        
         <script>
             $(document).ready(function() {
                 $("#headerTop").load("header.html");
             })
         </script>
-        <div id="headerTop" class="header"></div>
+        <div id="headerTop" class="header">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#illustrator">Illustrator</a></li>
+                    <li><a href="#photoshop">Contact</a></li>
+                    <li><a href="#premierepro">Premiere Pro</a></li>
+                  </ul>
+                </div>
+        </div>
         <div id="columns" class="columnsDesktop" style="margin-bottom: 5vh;">
             <script>
                 if (innerWidth < innerHeight) {

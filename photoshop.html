@@ -16,20 +16,24 @@
                 margin-top: 3vh;
             }
         </style>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#illustrator">Illustrator</a></li>
-            <li><a href="#photoshop">Contact</a></li>
-            <li><a href="#premierepro">Premiere Pro</a></li>
-          </ul>
     </head>
     <body id="body">
+        
         <script>
             $(document).ready(function() {
                 $("#headerTop").load("header.html");
             })
         </script>
-        <div id="headerTop" class="header"></div>
+        <div id="headerTop" class="header">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#illustrator">Illustrator</a></li>
+                    <li><a href="#photoshop">Contact</a></li>
+                    <li><a href="#premierepro">Premiere Pro</a></li>
+                  </ul>
+                </div>
+        </div>
         <div id="columns" class="columnsDesktop" style="margin-bottom: 5vh;">
             <script>
                 if (innerWidth < innerHeight) {
