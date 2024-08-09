@@ -1,124 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/illustrator.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <title>Photoshop</title>
-        <style>
-            .columnsDesktop {
-                position: relative;
-                display: grid;
-                grid-gap: 3vh;
-                /*        grid-template-columns: 33% 33% 33%;*/
-                width: 150vh;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 3vh;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoshop</title>
+    <link rel="stylesheet" href="styles/illustrator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .columnsDesktop {
+            display: grid;
+            grid-gap: 3vh;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1200px;
+            margin: 3vh auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="headerTop" class="header">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="illustrator.html">Illustrator</a></li>
+                <li><a href="photoshop.html">Photoshop</a></li>
+                <li><a href="premierepro.html">Premiere Pro</a></li>
+              </ul>
+            </div>
+    </div>
+    
+    <div id="columns" class="columnsDesktop">
+        <div class="box" id="boxSponsors">
+            <p style="font-size: 150%; text-align: center;">Tech For Good Post</p>
+            <img src="images/PowerPointPitchHackathon1.png" alt="Film Fest 2018" style="width: 100%;">
+            <p>
+                This post was for all socials to help Tech for Good reach out to one of the events going on. I used photoshop to take the powerpoint icon and glamorized it to make it enticing. I've learned to create gradients, shadow-like manipulation, and light effects. 
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer" id="footer">
+        <h2>© JOSHUA CANCIO 2023</h2>
+        <h2>jd.cancio1@gmail.com</h2>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#headerTop").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+        function adjustLayout() {
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("columns").className = "columnsMobile";
+            } else {
+                document.getElementById("columns").className = "columnsDesktop";
             }
-        </style>
-    </head>
-    <body id="body">
-        
-        <script>
-            $(document).ready(function() {
-                $("#headerTop").load("header.html");
-            })
-        </script>
-        <div id="headerTop" class="header">
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="illustrator.html">Illustrator</a></li>
-                    <li><a href="photoshop.html">Photoshop</a></li>
-                    <li><a href="premierepro.html">Premiere Pro</a></li>
-                  </ul>
-                </div>
-        </div>
-        <div id="columns" class="columnsDesktop" style="margin-bottom: 5vh;">
-            <script>
-                if (innerWidth < innerHeight) {
-                    document.getElementById("columns").className = "columnsMobile";
-                } else {
-                    document.getElementById("columns").className = "columnsDesktop";
-                }
-            </script>
-            <div class="box" style="text-align: center;" id="boxSponsors">
-                <p style="font-size: 150%; text-align: center;">Sponsors & Partners</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/aeU7S8y3MfU"></iframe>
-                <p>
-                    As the world of Liberty finds itself embroiled in a time of great political upheaval and unrest, a group of young individuals find themselves at the heart of a war between the United States and North Korea. Our protagonists, a band of orphaned children, find themselves forced to flee from their homes and into the dangerous wilderness in order to avoid being conscripted into the conflict. As they embark on their journey, they must navigate the perils of a world ravaged by war and struggle to find the necessary supplies to ensure their survival. Along the way, they face many challenges and dangers, ultimately coming to understand the importance of standing up for their country and its values, rather than running away from their duty. <br/>
-                    <br/>
-                    The short film won 1st place at the 2018 <a href="https://www.youtube.com/user/LeeSchoolsTV" style="color: black; text-decoration: underline;">Lee County</a>
-                    Student Film Festival.
-                </p>
-                <img width="100%" src="images/FilmFest2018 (4).jpeg">
-            </div>
-            <div class="box" id="boxTiktok">
-                <p style="font-size: 150%; text-align: center;">Social Media Influence</p>
-                <p>I am a comedy-sketch content creator with a large following on various social media platforms. With over 2 million followers and 200+ million views across Tiktok, Youtube, and Instagram, I produce high quality comedy sketches that entertain and engage millions of users. I take great care in crafting each and every video, ensuring that it meets my high standards of quality and entertainment value. My dedication to my craft has made me a cherished figure in the online community, and my popularity continues to grow with each new video I release.</p>
-                <img src="images/tiktokGallery.png" width="100%">
-                <!--<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CQGuRphgkjM/" style="overflow: hidden; max-width:100%; padding:0; width:100%; height: 60vh;"></blockquote>
-         <script async src="https://www.instagram.com/embed.js"></script>-->
-            </div>
-            <div class="box" id="boxWar">
-                <p style="font-size: 150%; text-align: center;">World War III Short Film (2018)</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/aeU7S8y3MfU"></iframe>
-                <p>
-                    As the world of Liberty finds itself embroiled in a time of great political upheaval and unrest, a group of young individuals find themselves at the heart of a war between the United States and North Korea. Our protagonists, a band of orphaned children, find themselves forced to flee from their homes and into the dangerous wilderness in order to avoid being conscripted into the conflict. As they embark on their journey, they must navigate the perils of a world ravaged by war and struggle to find the necessary supplies to ensure their survival. Along the way, they face many challenges and dangers, ultimately coming to understand the importance of standing up for their country and its values, rather than running away from their duty. <br/>
-                    <br/>
-                    The short film won 1st place at the 2018 <a href="https://www.youtube.com/user/LeeSchoolsTV" style="color: black; text-decoration: underline;">Lee County</a>
-                    Student Film Festival.
-                </p>
-                <img width="100%" src="images/FilmFest2018 (4).jpeg">
-            </div>
-            <div class="box" id="boxWins">
-                <p style="font-size: 150%; text-align: center;">Film Awards</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/aeU7S8y3MfU"></iframe>
-                <p>
-                    As the world of Liberty finds itself embroiled in a time of great political upheaval and unrest, a group of young individuals find themselves at the heart of a war between the United States and North Korea. Our protagonists, a band of orphaned children, find themselves forced to flee from their homes and into the dangerous wilderness in order to avoid being conscripted into the conflict. As they embark on their journey, they must navigate the perils of a world ravaged by war and struggle to find the necessary supplies to ensure their survival. Along the way, they face many challenges and dangers, ultimately coming to understand the importance of standing up for their country and its values, rather than running away from their duty. <br/>
-                    <br/>
-                    The short film won 1st place at the 2018 <a href="https://www.youtube.com/user/LeeSchoolsTV" style="color: black; text-decoration: underline;">Lee County</a>
-                    Student Film Festival.
-                </p>
-                <img width="100%" src="images/FilmFest2018 (4).jpeg">
-            </div>
-            <div class="box" id="boxFire">
-                <p style="font-size: 150%; text-align: center;">Fire Simulation (2018)</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/mgFzXNRuZiA"></iframe>
-                <p>I was highly obsessed with visual effects and computer generated simulations during my high school years. In particular, I was drawn to the impact of smoke simulations in cinema, and I was determined to master the technique. After many hours of practice, I am now pleased with the results of my work, which took 30 hours to render using Blender 3D. The volumetric smoke simulation showcases my skills and dedication to the field.</p>
-            </div>
-            <div class="box" id="boxBuilding">
-                <p style="font-size: 150%; text-align: center;">Fracture Simulation (2018)</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/avOyviaBn2k"></iframe>
-                <p>I was captivated by the complexity and detail of fracture simulations. As a budding CGI artist, I was determined to learn the techniques used to create large-scale simulations, such as a collapsing bridge or an exploding structure. This simulation required the manipulation of 5000 individual fragments and took me 8 hours to render inside of Cinema 4D.</p>
-            </div>
-            <div class="box" id="boxLoop">
-                <p style="font-size: 150%; text-align: center;">Simulation Loop (2019)</p>
-                <iframe style="min-width: 100%; min-height: 25vh;" src="https://www.youtube.com/embed/nvT53g4Mjjs"></iframe>
-                <p>I desired to create a seamless, looping render featuring a variety of simulations, in addition to incorporating spatial stereo audio. For example, when I placed the fire near the camera, the audio primarily played through the right speaker. After the rendering process was complete, I was satisfied with the outcome. The rendering process took a total of 18 hours.</p>
-            </div>
-            <script>
-                if (innerWidth >= innerHeight) {
-                    document.getElementById("boxSponsors").style = "grid-column: 1 / 2; grid-row: 1 / 2;";
-                    document.getElementById("boxTiktok").style = "grid-column: 2 / 3; grid-row: 1 / 3;";
-                    document.getElementById("boxWar").style = "grid-column: 3 / 4; grid-row: 1 / 3;";
+        }
 
-                    document.getElementById("boxWins").style = "grid-column: 1 / 2; grid-row: 2 / 5;";
-                    document.getElementById("boxFire").style = "grid-column: 2 / 3; grid-row: 3 / 8;";
-                    document.getElementById("boxBuilding").style = "grid-column: 3 / 4; grid-row: 3 / 7;";
-
-                    document.getElementById("boxLoop").style = "grid-column: 1 / 2; grid-row: 5 / 10;";
-                }
-            </script>
-        </div>
-        <script>
-            $(document).ready(function() {
-                $("#footer").load("footer.html");
-            })
-        </script>
-        <div class="footer" id="footer">
-            <h2>© JOSHUA CANCIO 2023</h2>
-            <h2>jd.cancio1@gmail.com</h2>
-        </div>
-    </body>
+        adjustLayout();
+        window.addEventListener("resize", adjustLayout);
+    </script>
+</body>
 </html>
